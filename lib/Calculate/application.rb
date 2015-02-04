@@ -13,8 +13,8 @@ class Application
 		input = gets.chomp
 
 		while input != 'exit' do 	
-			@res = @opr.parse(input)
-			puts @res
+			res = @opr.parse(input)
+			puts res
 			print "$ "
 			input = gets.chomp
 		end
@@ -25,5 +25,5 @@ class Application
 		input = Kernel.gets.chomp
 		@opr.parse(input)
 	end
-	
+
 end

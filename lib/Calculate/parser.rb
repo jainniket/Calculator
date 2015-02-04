@@ -20,7 +20,6 @@ class Parser
 			self.calling_calculator(opr)
 			@history.push(to_parse)
 		end
-
 		return @res
 
 	end 
@@ -36,5 +35,5 @@ class Parser
 		end
 
 	end
-	
+
 end
