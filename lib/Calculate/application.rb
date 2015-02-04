@@ -1,9 +1,10 @@
-#starts the calculator application and identifies the user input
+#starts the calculator application and identifies the user input						
 
 class Application
 
 	def initialize
 		@opr = Parser.new
+		@history = []
 	end
 
 	def start
@@ -17,10 +18,12 @@ class Application
 			print "$ "
 			input = gets.chomp
 		end
+
 	end
 
 	def start_test
 		input = Kernel.gets.chomp
 		@opr.parse(input)
 	end
+	
 end

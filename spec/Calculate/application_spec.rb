@@ -11,5 +11,6 @@ describe "Application"  do
 
   	calculator = Application.new
   	calculator.start_test
+
 	end
 end

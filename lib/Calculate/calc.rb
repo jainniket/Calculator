@@ -29,7 +29,11 @@ class Calc
 	end
 
 	def abs()
-		@res = @res * (-1)
+		if(@res < 0)
+			@res = @res * (-1)
+		else
+			return @res
+		end
 	end
 
 	def neg()
@@ -39,7 +43,7 @@ class Calc
 	def sqrt()
 		if @res < 0
 			"can't get square root of a negative number"
-			retrun false
+			return false
 		else
 			@res = @res ** 0.5
 		end
@@ -60,5 +64,4 @@ class Calc
 	def cube()
 		@res = @res ** 3
 	end
-
 end
